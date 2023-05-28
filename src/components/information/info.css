@@ -1,0 +1,44 @@
+main {
+  margin-top: 7rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+main .informations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .informations .myImage {
+  margin-bottom: 1rem;
+}
+main .informations .myImage img {
+  width: 250px;
+}
+main .informations .apresentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+  color: #DBDBDB;
+  font-weight: bold;
+}
+main .informations .apresentation p {
+  margin-bottom: 0.25rem;
+}
+main .informations .infoButtons {
+  display: flex;
+  flex-direction: column;
+}
+main .informations .infoButtons .buttons {
+  background-color: #6741c0;
+  color: #dbdbdb;
+  font-weight: 500;
+  border: none;
+  padding: 0.5rem;
+  width: 6rem;
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
+}
+main .informations .infoButtons:active {
+  color: #5c31c0;
+  border-radius: 1rem;
+}/*# sourceMappingURL=info.css.map */
