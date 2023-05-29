@@ -1,0 +1,45 @@
+main {
+  font-family: "Inter";
+  display: flex;
+  flex-direction: column;
+}
+main .title__sobreMim {
+  margin-bottom: 2rem;
+}
+main .title__sobreMim p {
+  color: #0081c9;
+  font-weight: 800;
+}
+main .sobreMim {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+main .sobreMim .myImage {
+  margin-bottom: 2rem;
+}
+main .sobreMim .myImage img {
+  width: 250px;
+}
+main .info__sobreMim {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+main .info__sobreMim p {
+  color: #bdbdbd;
+}
+main .info__sobreMim #fistInfo__sobreMim {
+  font-weight: bold;
+}
+main .info__sobreMim .textPurple {
+  color: #8257E6;
+  margin-bottom: 1rem;
+}
+main .info__sobreMim .resumo {
+  text-align: center;
+  font-size: 0.75rem;
+  max-width: 80%;
+}/*# sourceMappingURL=sobreMim.css.map */

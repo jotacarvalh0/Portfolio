@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Arial", sans-serif;
+  font-family: "Inter";
 }
 
 body {
@@ -13,10 +13,12 @@ body {
 
 .textBlue {
   color: #0081c9;
+  font-weight: bold;
 }
 
 .textPurple {
   color: #8257E6;
+  font-weight: bold;
 }
 
 .italic {
