@@ -13,7 +13,7 @@ main .informations .myImage {
 main .informations .myImage img {
   width: 250px;
 }
-main .informations .apresentation {
+main .informations .info .apresentation {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,25 +21,68 @@ main .informations .apresentation {
   color: #303030;
   font-weight: bold;
 }
-main .informations .apresentation p {
+main .informations .info .apresentation p {
   margin-bottom: 0.25rem;
 }
-main .informations .infoButtons {
+main .informations .info .infoButtons {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   margin-bottom: 6rem;
 }
-main .informations .infoButtons .buttons {
+main .informations .info .infoButtons .buttons {
   background-color: #6741c0;
   color: #dbdbdb;
   font-weight: 500;
   border: none;
-  padding: 0.5rem;
+  height: 2rem;
   width: 6rem;
-  border-radius: 1rem;
+  border-radius: 3rem;
   margin-bottom: 0.5rem;
 }
-main .informations .infoButtons:active {
+main .informations .info .infoButtons:active {
   color: #5c31c0;
   border-radius: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    display: flex;
+    align-items: center;
+  }
+  main .informations {
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+    display: flex;
+    flex-direction: row;
+  }
+  main .informations .myImage {
+    margin-right: 4rem;
+  }
+  main .informations .myImage img {
+    width: 352px;
+  }
+  main .informations .info {
+    margin-top: 3rem;
+  }
+  main .informations .info .apresentation {
+    font-size: 2rem;
+  }
+  main .informations .info .infoButtons {
+    justify-content: center;
+  }
+  main .informations .info .infoButtons .buttons {
+    margin: 0 1rem;
+    width: 10rem;
+    height: 3.5rem;
+    font-weight: 600;
+  }
+}
+@media screen and (min-width: 1920px) {
+  main .informations {
+    margin-top: 10rem;
+    margin-bottom: 12rem;
+  }
+  main .informations .myImage img {
+    width: 520px;
+  }
 }/*# sourceMappingURL=info.css.map */

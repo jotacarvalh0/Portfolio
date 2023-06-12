@@ -1,3 +1,8 @@
+$bold: 2.25rem
+$medium: 2rem
+$small: 1.5rem
+
+
 main
     margin-top: 8rem
     font-family: 'Inter'
@@ -10,34 +15,78 @@ main
             img
                 width: 250px
 
-        .apresentation
-            display: flex
-            flex-direction: column
-            align-items: center
+        .info
+            .apresentation
+                display: flex
+                flex-direction: column
+                align-items: center
 
-            margin-bottom: 1rem
+                margin-bottom: 1rem
 
-            color: #303030
-            font-weight: bold
-            p
-                margin-bottom: 0.25rem
+                color: #303030
+                font-weight: bold
+                p
+                    margin-bottom: 0.25rem
 
-        .infoButtons
-            display: flex
-            flex-direction: column
+            .infoButtons
+                display: flex
+                justify-content: space-between
+                margin-bottom: 6rem
+                .buttons
+                    background-color: #6741c0
+                    color: #dbdbdb
+                    font-weight: 500
+                    border: none
+
+                    height: 2rem
+                    width: 6rem
+                    border-radius: 3rem
+                    margin-bottom: 0.5rem
+                &:active
+                    color: #5c31c0
+                    border-radius: 1rem
+
+@media screen and (min-width: 1024px) 
+    main
+        display: flex
+        align-items: center
+        .informations
+            margin-top: 4rem
             margin-bottom: 6rem
-            .buttons
-                background-color: #6741c0
-                color: #dbdbdb
-                font-weight: 500
-                border: none
+            display: flex
+            flex-direction: row
+            .myImage
+                margin-right: 4rem
+                img
+                    width: 352px
 
-                padding: 0.5rem
-                width: 6rem
-                border-radius: 1rem
-                margin-bottom: 0.5rem
-            &:active
-                color: #5c31c0
-                border-radius: 1rem
+            .info
+                margin-top: 3rem
+                .apresentation
+                    font-size: $medium
+                .infoButtons
+                    justify-content: center
+                    .buttons
+                        margin: 0 1rem
+                        width: 10rem
+                        height: 3.5rem
+                        font-weight: 600
 
-            
+
+// TELA 1280-720
+
+@media screen and (min-width: 1920px) 
+    main
+
+        .informations
+            margin-top: 10rem
+            margin-bottom: 12rem
+
+            .myImage
+                img
+                    width: 520px
+
+
+// TELA 1280-720
+
+@media screen and (min-width: px) 
