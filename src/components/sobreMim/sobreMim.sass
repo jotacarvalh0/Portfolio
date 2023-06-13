@@ -1,38 +1,119 @@
+$blackPurple: #13131f
+$blue: #0081c9
+$purple: #6741c0
+$white: #d9d9d9
+$grayPurple: #252233
+$black: #303030
+
+$fontBold: 800
+
+//1024px
+$bigSmall: 1.5rem
+$mediumSmall: 1.25rem
+$smallSmall: 1rem
+
+//1920px
+$big: 1.75rem
+$medium: 1.5rem
+$small: 1.25rem 
+
 main
     font-family: 'Inter'
     display: flex
     flex-direction: column
-    
-    .title__sobreMim
-        margin-bottom: 2rem
-        p
-            color: #0081c9
-            font-weight: 800
     .sobreMim
         display: flex
         flex-direction: column
         align-items: center
-        margin-bottom: 1rem
-        .myImage
+        .title__sobreMim
             margin-bottom: 2rem
-            img
-                width: 250px
-
-    .info__sobreMim
-        display: flex
-        flex-direction: column
-        align-items: center
-
-        margin-bottom: 2rem
-        p
-            color: #303030
-
-        #fistInfo__sobreMim
-            font-weight: bold
-        .textPurple
-            color: #8257E6
-            margin-bottom: 1rem
-        .resumo
+            p
+                color: $blue
+                font-weight: $fontBold
+        .infos_sobreMim
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
             text-align: center
-            font-size: 0.75rem
-            max-width: 80%
+            .myImage
+                display: flex
+                align-items: center
+                margin-bottom: 2rem
+                img
+                    width: 250px
+            .info__sobreMim
+                display: flex
+                flex-direction: column
+                align-items: center
+
+                margin-bottom: 2rem
+                p
+                    color: $black
+
+                #fistInfo__sobreMim
+                    font-weight: bold
+                .textPurple
+                    color: $purple
+                    margin-bottom: 1rem
+                .resumo
+                    text-align: center
+                    font-size: 0.75rem
+                    max-width: 80%
+    
+@media screen and (min-width: 1024px)
+    main
+        .sobreMim
+            margin-bottom: 5rem
+            .title__sobreMim
+                margin-bottom: 5rem
+                p
+                    font-size: $bigSmall
+            .infos_sobreMim
+                display: flex
+                flex-direction: row
+                width: 80%
+                justify-content: center
+                
+                .myImage
+                    display: flex
+                    align-items: center
+                    img
+                        width: 350px
+    
+                .info__sobreMim
+                    #fistInfo__sobreMim
+                        font-size: $mediumSmall
+                    .textPurple
+                        font-size: $mediumSmall
+                    .resumo
+                        font-size: $smallSmall
+
+@media screen and (min-width: 1900px)
+    main
+        .sobreMim
+            width: 70%
+            margin-bottom: 10rem
+            .title__sobreMim
+                margin-bottom: 7rem
+                p
+                    font-size: $big
+            .infos_sobreMim
+                display: flex
+                flex-direction: row
+                width: 80%
+                justify-content: center
+                
+                .myImage
+                    display: flex
+                    align-items: center
+                    img
+                        width: 500px
+    
+                .info__sobreMim
+                    #fistInfo__sobreMim
+                        font-size: $medium
+                    .textPurple
+                        font-size: $medium
+                    .resumo
+                        font-size: $small

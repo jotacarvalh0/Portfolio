@@ -110,4 +110,9 @@ header .navbar .menu li a:hover:before {
   header .navbar .menu.active {
     right: 0;
   }
+}
+@media screen and (min-width: 1900px) {
+  header .navbar {
+    max-width: 90%;
+  }
 }/*# sourceMappingURL=menu.css.map */

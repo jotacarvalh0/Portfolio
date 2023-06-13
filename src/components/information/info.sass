@@ -1,6 +1,21 @@
-$bold: 2.25rem
-$medium: 2rem
-$small: 1.5rem
+$blackPurple: #13131f
+$blue: #0081c9
+$purple: #6741c0
+$white: #d9d9d9
+$grayPurple: #252233
+$black: #303030
+
+$fontBold: 800
+
+//1024px
+$bigSmall: 1.5rem
+$mediumSmall: 1.25rem
+$smallSmall: 1rem
+
+//1920px
+$big: 1.75rem
+$medium: 1.5rem
+$small: 1.25rem 
 
 
 main
@@ -63,30 +78,30 @@ main
             .info
                 margin-top: 3rem
                 .apresentation
-                    font-size: $medium
+                    font-size: $mediumSmall
                 .infoButtons
                     justify-content: center
                     .buttons
                         margin: 0 1rem
                         width: 10rem
                         height: 3.5rem
-                        font-weight: 600
+                        font-size: $smallSmall
 
-
-// TELA 1280-720
-
-@media screen and (min-width: 1920px) 
+@media screen and (min-width: 1910px) 
     main
-
+        display: flex
+        align-items: center
+        width: 100%
         .informations
-            margin-top: 10rem
-            margin-bottom: 12rem
+            margin-top: 5rem
+            margin-bottom: 7rem
 
             .myImage
                 img
-                    width: 520px
-
-
-// TELA 1280-720
-
-@media screen and (min-width: px) 
+                    width: 720px
+            .info
+                .apresentation
+                    font-size: $medium
+                .infoButtons
+                    .buttons
+                        font-size: $small

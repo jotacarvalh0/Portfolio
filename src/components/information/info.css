@@ -65,7 +65,7 @@ main .informations .info .infoButtons:active {
     margin-top: 3rem;
   }
   main .informations .info .apresentation {
-    font-size: 2rem;
+    font-size: 1.25rem;
   }
   main .informations .info .infoButtons {
     justify-content: center;
@@ -74,15 +74,26 @@ main .informations .info .infoButtons:active {
     margin: 0 1rem;
     width: 10rem;
     height: 3.5rem;
-    font-weight: 600;
+    font-size: 1rem;
   }
 }
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1910px) {
+  main {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
   main .informations {
-    margin-top: 10rem;
-    margin-bottom: 12rem;
+    margin-top: 5rem;
+    margin-bottom: 7rem;
   }
   main .informations .myImage img {
-    width: 520px;
+    width: 720px;
+  }
+  main .informations .info .apresentation {
+    font-size: 1.5rem;
+  }
+  main .informations .info .infoButtons .buttons {
+    font-size: 1.25rem;
   }
 }/*# sourceMappingURL=info.css.map */
